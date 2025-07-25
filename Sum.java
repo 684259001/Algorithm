@@ -7,7 +7,7 @@ public class Sum {
         System.out.print("Enter box = ");
         int box = scanner.nextInt();
         // ใส่ค่าดินสอต่อกล่อง
-        System.out.print("Enter pencil = ");
+        System.out.print("Enter pencils = ");
         int pencil = scanner.nextInt();
         // ผลรวม
         int Sum = box * pencil;
