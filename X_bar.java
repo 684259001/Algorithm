@@ -9,7 +9,7 @@ public class X_bar {
 
         //number2
         System.out.print("Please enter number2 = ");
-        int num2 = scanner.nextInt();
+        int num2 = scanner.nextInt(); 
 
         //number3
         System.out.print("Please enter number3 = ");

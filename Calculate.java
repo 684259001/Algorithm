@@ -21,4 +21,4 @@ public class Calculate {
         int square = side * side;
         System.out.println("Area of triangle = " +triangle +" and " +"are of square = " +square);
     }
-}
+} 
