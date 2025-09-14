@@ -1,0 +1,53 @@
+import java.util.Scanner ;
+    public class NoteChange_2 {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            //รับจำนวนสินค้า
+            System.out.print("Enter number of product :");
+            int numOfproduct = scanner.nextInt();
+            //ราคาสินค้า
+            System.out.print("Enter the price : ");
+            int sale = scanner.nextInt();
+            //รับค่าเงินที่ลูกค้าจ่าย 
+            System.out.print("Please enter of money : ");
+            int money = scanner.nextInt();
+            //จำนวนเงินที่ต้องชำระ
+            System.out.print("Please enter of pay : ");
+            int pay = scanner.nextInt();
+            int change = money - pay ;
+            System.out.println("Change is : " +change +" baht.");
+
+            if (money >= pay ) {
+                int fiveHundred = change / 500 ;
+                    change = change % 500 ;
+                int hundred = change / 100 ;
+                    change = change % 100 ;
+                int fifty = change / 50 ;
+                    change = change % 50 ;
+                int twenty = change / 20 ;
+                    change = change % 20 ;
+                int ten = change / 10 ;
+                    change = change % 10 ;
+                int five = change / 5 ;
+                    change = change % 5 ;
+                int two = change / 2 ;
+                    change = change % 2 ;
+            
+
+                System.out.println("Five-hundred note: " +fiveHundred +" note(s)");
+                System.out.println("Hundred note: " +hundred +" note(s)");
+                System.out.println("Fifty note: " +fifty +" note(s)");
+                System.out.println("Twenty note: " +twenty +" note(s)");
+                System.out.println("Ten coiin: " +ten +" coin(s)");
+                System.out.println("Five coin: " +five +" coin(s)");
+                System.out.println("Two coin: " +two +" coin(s)");
+                System.out.println("One coin: " +change +" coin(s)");
+            } 
+
+            else {
+                System.out.println(" Not enough money!!");
+            }
+            
+
+        }
+}
